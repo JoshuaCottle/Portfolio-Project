@@ -69,11 +69,11 @@ h3 {
     color: #063443 !important; /* slightly darker for hover contrast */
 }
 
-/* Footer styling: match navbar color and keep at page bottom */
+/* Footer styling */
 footer#contact {
     background-color: var(--secondary-color);
     color: var(--primary-color);
-    padding: 3rem 0;
+    padding: 1rem 0; /* reduced vertical padding to make footer shorter */
     width: 100%;
 }
 footer#contact a {
@@ -81,8 +81,15 @@ footer#contact a {
 }
 footer#contact .social-links a {
     color: var(--primary-color);
-    font-size: 1.25rem;
-    margin-right: 0.75rem;
+    font-size: 1rem; /* slightly smaller icons */
+    margin-right: 0.5rem;
+}
+/* Slightly reduce heading sizes inside footer for compactness */
+footer#contact h2 {
+    font-size: 1.5rem;
+}
+footer#contact h3 {
+    font-size: 1rem;
 }
 
 /* Media queries */
