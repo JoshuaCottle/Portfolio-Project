@@ -15,6 +15,18 @@ body {
     font-family: var(--primary-font);
 }
 
+/* Reserve space for fixed navbar to avoid content being hidden underneath */
+body {
+    padding-top: 72px;
+}
+
+/* Logo sizing inside the navbar */
+.logo {
+    height: 40px;
+    width: auto;
+    display: inline-block;
+}
+
 h1,
 h2,
 h3 {
@@ -24,6 +36,16 @@ h3 {
 
 .sub-heading-color {
     color: var(--highlight-color);
+}
+
+/* Navbar */
+
+#navbar {
+    background-color: var(--primary-color);
+}
+
+#navbar .logo {
+    width: 30px;
 }
 
 /* Media queries */
