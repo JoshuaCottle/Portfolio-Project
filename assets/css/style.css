@@ -15,9 +15,16 @@ body {
     font-family: var(--primary-font);
 }
 
-/* Reserve space for fixed navbar to avoid content being hidden underneath */
+/* Make the page a column flex container so footer can be pushed to bottom */
+html,
 body {
-    padding-top: 72px;
+    height: 100%;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding-top: 72px; /* Reserve space for fixed navbar */
 }
 
 /* Logo sizing inside the navbar */
@@ -60,6 +67,22 @@ h3 {
 }
 #navbar .nav-link:hover {
     color: #063443 !important; /* slightly darker for hover contrast */
+}
+
+/* Footer styling: match navbar color and keep at page bottom */
+footer#contact {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    padding: 3rem 0;
+    width: 100%;
+}
+footer#contact a {
+    color: var(--primary-color);
+}
+footer#contact .social-links a {
+    color: var(--primary-color);
+    font-size: 1.25rem;
+    margin-right: 0.75rem;
 }
 
 /* Media queries */
