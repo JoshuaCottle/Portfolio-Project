@@ -40,12 +40,26 @@ h3 {
 
 /* Navbar */
 
+/* Navbar: use a lighter background so logo contrasts */
 #navbar {
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
+    z-index: 1030; /* ensure fixed navbar sits above page content */
 }
 
+/* Ensure navbar logo is visible and keeps its aspect ratio */
 #navbar .logo {
-    width: 30px;
+    height: 40px;
+    width: auto;
+    display: inline-block;
+}
+
+/* Navbar link colors for light background */
+#navbar .navbar-brand,
+#navbar .nav-link {
+    color: var(--primary-color) !important;
+}
+#navbar .nav-link:hover {
+    color: #063443 !important; /* slightly darker for hover contrast */
 }
 
 /* Media queries */
