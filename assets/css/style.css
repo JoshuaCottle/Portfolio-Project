@@ -1,0 +1,121 @@
+/* Import Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Amarante&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&display=swap");
+
+/* Global Styles */
+:root {
+    --primary-font: "Amarante", sans-serif;
+    --secondary-font: "Lato", sans-serif;
+    --primary-color: #0b4f6c; /* deep teal / navy */
+    --secondary-color: #7fb3d5; /* soft sky blue */
+    --highlight-color: #ffffff; /* white */
+    --highlight-color-light: #7a9fc2; /* light blue */
+}
+
+body {
+    font-family: var(--primary-font);
+}
+
+/* Make the page a column flex container so footer can be pushed to bottom */
+html,
+body {
+    height: 100%;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding-top: 72px; /* Reserve space for fixed navbar */
+}
+
+/* Logo sizing inside the navbar */
+.logo {
+    height: 40px;
+    width: auto;
+    display: inline-block;
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--secondary-font);
+    color: var(--primary-color);
+}
+
+.sub-heading-color {
+    color: var(--highlight-color);
+}
+
+/* Navbar */
+
+/* Navbar: use a lighter background so logo contrasts */
+#navbar {
+    background-color: var(--secondary-color);
+    z-index: 1030; /* ensure fixed navbar sits above page content */
+}
+
+/* Ensure navbar logo is visible and keeps its aspect ratio */
+#navbar .logo {
+    height: 40px;
+    width: auto;
+    display: inline-block;
+}
+
+/* Navbar link colors for light background */
+#navbar .navbar-brand,
+#navbar .nav-link {
+    color: var(--primary-color) !important;
+}
+#navbar .nav-link:hover {
+    color: #063443 !important; /* slightly darker for hover contrast */
+}
+
+/* Footer styling */
+footer#contact {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    padding: 1rem 0; /* reduced vertical padding to make footer shorter */
+    width: 100%;
+}
+footer#contact a {
+    color: var(--primary-color);
+}
+footer#contact .social-links a {
+    color: var(--primary-color);
+    font-size: 1rem; /* slightly smaller icons */
+    margin-right: 0.5rem;
+}
+/* Slightly reduce heading sizes inside footer for compactness */
+footer#contact h2 {
+    font-size: 1.5rem;
+}
+footer#contact h3 {
+    font-size: 1rem;
+}
+
+/* Media queries */
+
+/* Small screens and up */
+@media screen and (min-width: 576px) {
+    /* increase font size in events table when screen size is large enough */
+}
+
+/* Medium devices (tablets, 768px and up) */
+
+@media screen and (min-width: 768px) {
+    /* Make all service cards the same height for consistency */
+}
+
+/* Large devices (small laptops, 992px and up) */
+@media screen and (min-width: 992px) {
+    /* Make all service cards the same height for consistency */
+}
+
+/* xl devices (large desktops, 1200px and up) */
+@media screen and (min-width: 1200px) {
+    /* make all service cards the same height for consistency */
+}
+
+/* xxl devices (larger desktops, 1400px and up) */
+@media screen and (min-width: 1400px) {
+    /* make all service cards the same height for consistency */
+}
