@@ -22,30 +22,34 @@ body {
     position: relative;
 }
 
-/* Logo sizing inside the navbar */
+/* Hero image element */
 #hero-image {
     height: 400px;
-    position: relative;
     width: 100%;
-    background-image: url("../images/assets/images/hero.png");
+    background-image: url("../images/sand.webp");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
 }
 
+/* Centered cover text over the hero image */
 #cover-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     padding: 2rem 1rem;
     color: var(--primary-color);
-    /* readable background for text over the hero image */
     background-color: rgba(255, 255, 255, 0.9);
     max-width: 900px;
-    margin: 1rem auto;
+    width: calc(100% - 2rem);
     border-radius: 10px;
-    #cover-text {
-        position: relative;
-        z-index: 5;
-    }
     box-shadow: 0 6px 18px rgba(11, 79, 108, 0.08);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    z-index: 5;
 }
 
 /* Space between header and main content */
@@ -95,14 +99,9 @@ h3 {
     color: #063443 !important; /* slightly darker for hover contrast */
 }
 
-/* hero section */
+/* hero container (positioning context) */
 #hero {
-    height: 600px;
     width: 100%;
-    background-image: url("../images/hero.png");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
     position: relative;
 }
 
