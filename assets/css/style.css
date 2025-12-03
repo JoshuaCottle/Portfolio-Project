@@ -179,3 +179,19 @@ footer#contact h3 {
 @media screen and (min-width: 1400px) {
     /* make all service cards the same height for consistency */
 }
+
+.carousel {
+    /* ensure carousel takes the width of its column */
+    width: 100%;
+}
+.carousel .carousel-item img {
+    width: 100%;
+    height: 55vh; /* responsive height relative to viewport */
+    max-height: 700px;
+    object-fit: cover; /* crop to fill container without distortion */
+}
+@media screen and (max-width: 576px) {
+    .carousel .carousel-item img {
+        height: 40vh; /* smaller height on narrow screens */
+    }
+}
