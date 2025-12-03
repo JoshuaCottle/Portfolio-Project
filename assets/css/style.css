@@ -26,7 +26,7 @@ body {
 #hero-image {
     height: 400px;
     width: 100%;
-    background-image: url("../images/mental-health.png");
+    background-image: url("../images/assets/images/hero.png");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -35,6 +35,15 @@ body {
 #cover-text {
     padding: 2rem 1rem;
     color: var(--primary-color);
+    /* readable background for text over the hero image */
+    background-color: rgba(255, 255, 255, 0.9);
+    max-width: 900px;
+    margin: 1rem auto;
+    border-radius: 10px;
+    box-shadow: 0 6px 18px rgba(11, 79, 108, 0.08);
+}
+
+
 }
 .logo {
     height: 40px;
@@ -64,6 +73,12 @@ h3 {
     height: 40px;
     width: auto;
     display: inline-block;
+}
+
+/* Footer-specific logo sizing to avoid inheriting larger navbar sizes */
+footer#contact .logo {
+    height: 28px;
+    width: auto;
 }
 
 #navbar .navbar-brand,
@@ -113,7 +128,13 @@ footer#contact h3 {
 /* Small screens and up */
 @media screen and (min-width: 576px) {
     /* increase font size in events table when screen size is large enough */
+  #cover-text {
+        padding: 1.25rem 0.75rem;
+        margin: 0.5rem;
+        border-radius: 8px;
+    }
 }
+
 
 /* Medium devices (tablets, 768px and up) */
 
