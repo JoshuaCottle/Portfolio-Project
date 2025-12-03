@@ -18,16 +18,24 @@ body {
 /* Make the page a column flex container so footer can be pushed to bottom */
 html,
 body {
-    height: 100%;
-}
-body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    padding-top: 72px; /* Reserve space for fixed navbar */
+    width: 100%;
+    position: relative;
 }
 
 /* Logo sizing inside the navbar */
+#hero-image {
+    height: 400px;
+    width: 100%;
+    background-image: url("../images/mental-health.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+#cover-text {
+    padding: 2rem 1rem;
+    color: var(--primary-color);
+}
 .logo {
     height: 40px;
     width: auto;
@@ -70,7 +78,7 @@ h3 {
 #hero {
     height: 600px;
     width: 100%;
-    background-image: url("../images/mental-health.png");
+    background-image: url("../images/hero.png");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
