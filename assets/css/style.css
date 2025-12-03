@@ -47,26 +47,35 @@ h3 {
 
 /* Navbar */
 
-/* Navbar: use a lighter background so logo contrasts */
 #navbar {
     background-color: var(--secondary-color);
     z-index: 1030; /* ensure fixed navbar sits above page content */
 }
 
-/* Ensure navbar logo is visible and keeps its aspect ratio */
 #navbar .logo {
     height: 40px;
     width: auto;
     display: inline-block;
 }
 
-/* Navbar link colors for light background */
 #navbar .navbar-brand,
 #navbar .nav-link {
     color: var(--primary-color) !important;
 }
 #navbar .nav-link:hover {
     color: #063443 !important; /* slightly darker for hover contrast */
+}
+
+/* hero section */
+#hero {
+    height: 600px;
+    width: 100%;
+    /* Use existing image and correct relative path from this CSS file (../images/) */
+    background-image: url("../images/mental-health.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
 }
 
 /* Footer styling */
@@ -84,7 +93,7 @@ footer#contact .social-links a {
     font-size: 1rem; /* slightly smaller icons */
     margin-right: 0.5rem;
 }
-/* Slightly reduce heading sizes inside footer for compactness */
+
 footer#contact h2 {
     font-size: 1.5rem;
 }
