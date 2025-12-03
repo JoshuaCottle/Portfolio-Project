@@ -70,7 +70,6 @@ h3 {
 #hero {
     height: 600px;
     width: 100%;
-    /* Use existing image and correct relative path from this CSS file (../images/) */
     background-image: url("../images/mental-health.png");
     background-repeat: no-repeat;
     background-position: center center;
