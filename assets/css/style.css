@@ -25,6 +25,7 @@ body {
 /* Logo sizing inside the navbar */
 #hero-image {
     height: 400px;
+    position: relative;
     width: 100%;
     background-image: url("../images/assets/images/hero.png");
     background-repeat: no-repeat;
@@ -40,11 +41,22 @@ body {
     max-width: 900px;
     margin: 1rem auto;
     border-radius: 10px;
+    #cover-text {
+        position: relative;
+        z-index: 5;
+    }
     box-shadow: 0 6px 18px rgba(11, 79, 108, 0.08);
 }
 
-
+/* Space between header and main content */
+#header {
+    margin-bottom: 2.5rem;
 }
+
+main {
+    padding-top: 1rem;
+}
+
 .logo {
     height: 40px;
     width: auto;
@@ -75,12 +87,6 @@ h3 {
     display: inline-block;
 }
 
-/* Footer-specific logo sizing to avoid inheriting larger navbar sizes */
-footer#contact .logo {
-    height: 28px;
-    width: auto;
-}
-
 #navbar .navbar-brand,
 #navbar .nav-link {
     color: var(--primary-color) !important;
@@ -101,6 +107,7 @@ footer#contact .logo {
 }
 
 /* Footer styling */
+
 footer#contact {
     background-color: var(--secondary-color);
     color: var(--primary-color);
@@ -116,6 +123,12 @@ footer#contact .social-links a {
     margin-right: 0.5rem;
 }
 
+/* Footer-specific logo sizing to avoid inheriting larger navbar sizes */
+footer#contact .logo {
+    height: 28px;
+    width: auto;
+}
+
 footer#contact h2 {
     font-size: 1.5rem;
 }
@@ -128,13 +141,19 @@ footer#contact h3 {
 /* Small screens and up */
 @media screen and (min-width: 576px) {
     /* increase font size in events table when screen size is large enough */
-  #cover-text {
+    #cover-text {
         padding: 1.25rem 0.75rem;
         margin: 0.5rem;
         border-radius: 8px;
     }
+    #services .card {
+        margin-bottom: 1.25rem;
+    }
+    #services .col-12 {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
 }
-
 
 /* Medium devices (tablets, 768px and up) */
 
@@ -144,7 +163,12 @@ footer#contact h3 {
 
 /* Large devices (small laptops, 992px and up) */
 @media screen and (min-width: 992px) {
-    /* Make all service cards the same height for consistency */
+    #header {
+        margin-bottom: 4rem;
+    }
+    main {
+        padding-top: 1.5rem;
+    }
 }
 
 /* xl devices (large desktops, 1200px and up) */
