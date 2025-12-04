@@ -13,7 +13,7 @@
 
 ![desktop](assets/images/desktop_response.png)
 ![tablet](assets/images/tablet.png)
-![Phone Image](phone_response.png)
+![Phone Image](assets/images/phone_response.png)
 
 Breif
 Project 4: Mental Health Awareness
@@ -113,8 +113,8 @@ User story: As a User seeking quick guidance, I want concise information cards t
 
 **W3C Validation**
 
--   CSS: ![W3C CSS validity test](assets/images/css-validator.png)
--   HTML: ![W3C HTML validity test](assets/images/html-validity-check.png)
+-   CSS: ![W3C CSS validity test](assets/images/css_validator.png)
+-   HTML: ![W3C HTML validity test](assets/images/html_validity_check.png)
     .
 
 **AI Use**
