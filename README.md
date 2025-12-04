@@ -13,7 +13,7 @@
 
 ![desktop](assets/images/desktop_response.png)
 ![tablet](assets/images/tablet.png)
-![Phone Image](assets/images/phone_response.png)
+![Phone Image](phone_response.png)
 
 Breif
 Project 4: Mental Health Awareness
@@ -104,15 +104,18 @@ User story: As a User seeking quick guidance, I want concise information cards t
 
 **Testing**
 
-<h5>light house</h5>
-mobile
-![light house test](assets/images/image.png)
-desktop
-!{lighthouse test }(assets/images/image-1.png)
-w3 css validity test 
-![alt text](assets\images\css validiater.png)
-w3 Html Validity test
-![alt text](assets\images\Html validity check.png)
+## Testing
+
+**Lighthouse Performance**
+
+-   Mobile: ![Lighthouse mobile test](assets/images/image.png)
+-   Desktop: ![Lighthouse desktop test](assets/images/image-1.png)
+
+**W3C Validation**
+
+-   CSS: ![W3C CSS validity test](assets/images/css-validator.png)
+-   HTML: ![W3C HTML validity test](assets/images/html-validity-check.png)
+    .
 
 **AI Use**
 
