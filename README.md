@@ -11,9 +11,9 @@
 
 **Example responsive image**
 
-![desktop](assets\images\desktop response.png)
-![tablet](assets\images\tablet.png)
-![phone](assets/images/phone response .png)
+![desktop](assets/images/desktop%20response.png)
+![tablet](assets/images/tablet.png)
+![phone](assets/images/phone%20response.png)
 
 Breif
 Project 4: Mental Health Awareness
@@ -108,7 +108,7 @@ User story: As a User seeking quick guidance, I want concise information cards t
 mobile
 ![light house test](assets/images/image.png)
 desktop
-!{lighthouse test }](assets/images/image-1.png)
+!{lighthouse test }(assets/images/image-1.png)
 w3 css validity test 
 ![alt text](assets\images\css validiater.png)
 w3 Html Validity test
