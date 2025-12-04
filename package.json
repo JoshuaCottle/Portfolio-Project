@@ -1,0 +1,9 @@
+{
+    "name": "portfolio-project",
+    "version": "1.0.0",
+    "private": true,
+    "scripts": {
+        "check-rel": "node scripts/check-rel.js",
+        "check-rel:fix": "node scripts/check-rel.js --fix"
+    }
+}
