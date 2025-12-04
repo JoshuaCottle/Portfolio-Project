@@ -11,9 +11,9 @@
 
 **Example responsive image**
 
-![desktop](assets/images/desktop%20response.png)
+![desktop](assets/images/desktop_response.png)
 ![tablet](assets/images/tablet.png)
-![phone](assets/images/phone%20response.png)
+![Phone Image](assets/images/phone_response.png)
 
 Breif
 Project 4: Mental Health Awareness
