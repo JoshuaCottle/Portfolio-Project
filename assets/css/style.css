@@ -170,11 +170,6 @@ footer#contact h3 {
         margin-bottom: 4rem;
     }
     main {
-        /* Add spacing below the affirmations section so it doesn't sit flush against the footer */
-        #affirmations-section {
-            margin-bottom: 4rem;
-            padding-bottom: 2rem;
-        }
         padding-top: 1.5rem;
     }
 }
@@ -213,7 +208,7 @@ footer#contact h3 {
     object-fit: cover;
 }
 
-/* Card hover/focus uplift for better affordance */
+/* Card hover */
 .card {
     transition: transform 0.22s ease, box-shadow 0.22s ease;
     will-change: transform;
