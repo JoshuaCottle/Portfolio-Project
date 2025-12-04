@@ -16,7 +16,6 @@ body {
     font-family: var(--primary-font);
 }
 
-/* Make the page a column flex container so footer can be pushed to bottom */
 html,
 body {
     width: 100%;
@@ -33,7 +32,6 @@ body {
     background-size: cover;
 }
 
-/* Centered cover text over the hero image */
 #cover-text {
     position: absolute;
     top: 50%;
@@ -53,7 +51,6 @@ body {
     z-index: 5;
 }
 
-/* Space between header and main content */
 #header {
     margin-bottom: 2.5rem;
 }
@@ -62,12 +59,10 @@ main {
     padding-top: 1rem;
 }
 
-/* Ensure sections clear the fixed navbar and anchors don't get hidden */
 .section {
     padding-top: calc(var(--navbar-height) + 1rem);
 }
 
-/* When linking to #affirmations, leave space for the navbar */
 #affirmations {
     scroll-margin-top: calc(var(--navbar-height) + 0.75rem);
 }
@@ -86,7 +81,8 @@ h3 {
 }
 
 .sub-heading-color {
-    color: var(--highlight-color);
+    color: var(--primary-color);
+    font-weight: 600;
 }
 
 /* Navbar */
@@ -107,7 +103,7 @@ h3 {
     color: var(--primary-color) !important;
 }
 #navbar .nav-link:hover {
-    color: #063443 !important; /* slightly darker for hover contrast */
+    color: #063443 !important;
 }
 
 /* hero container (positioning context) */
@@ -161,6 +157,9 @@ footer#contact h3 {
         padding-left: 0.5rem;
         padding-right: 0.5rem;
     }
+    .carousel .carousel-item img {
+        height: 40vh;
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -193,6 +192,20 @@ footer#contact h3 {
 .carousel {
     width: 100%;
 }
+.card-text {
+    line-height: 1.6;
+}
+.card-text ul {
+    margin-top: 0.75rem;
+    margin-bottom: 1rem;
+    padding-left: 1.25rem;
+}
+.card-text li {
+    margin-bottom: 0.45rem;
+}
+.card-text p + ul {
+    margin-top: 0.5rem;
+}
 .carousel .carousel-item img {
     width: 100%;
     height: 55vh;
@@ -200,8 +213,23 @@ footer#contact h3 {
     object-fit: cover;
 }
 
-@media screen and (max-width: 576px) {
-    .carousel .carousel-item img {
-        height: 40vh;
+/* Card hover/focus uplift for better affordance */
+.card {
+    transition: transform 0.22s ease, box-shadow 0.22s ease;
+    will-change: transform;
+}
+.card:hover,
+.card:focus-within {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(11, 79, 108, 0.12);
+}
+.card:active {
+    transform: translateY(-2px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .card {
+        transition: none;
+        transform: none;
     }
 }
