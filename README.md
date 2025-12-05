@@ -69,6 +69,18 @@ User story: As a User seeking quick guidance, I want concise information cards t
 -   Responsive grid (Bootstrap 5) for cards and media queries for smaller screens.
 -   Accessible markup (aria attributes on carousel and navigation) and visible captions on small screens.
 
+**wireframes**
+![dropdown tablet](assets\images\dropdown tablet 1.png)
+![home page](assets\images\home page desktop.png)
+![home page tablet ](assets\images\home page tablet 1.png)
+![home page tablet 2](assets\images\home page tablet 2.png)
+![phone home dropdown](assets\images\phone home dropdown.png)
+![phone home footer](assets\images\phone home footer.png)
+![phone home full footer](assets\images\phone home full footer.png)
+![tips and afirmations page ](assets\images\tips and afirmations page.png)
+![Phone Image](assets\images\tips page tablet 1.png)
+![Phone Image](assets\images\tips page tablet 2.png)
+
 **Website features**
 
 -   Responsive navbar with brand/logo
@@ -138,5 +150,210 @@ User story: As a User seeking quick guidance, I want concise information cards t
     -   [Mind](https://www.mind.org.uk) - Mental health charity
 -   **Images**: Various sources (check `assets/images` filenames). Replace with properly licensed assets if publishing commercially.
 -   **Frameworks & Libraries**: Bootstrap 5, Font Awesome icons
+
+**code that inspired me**
+
+        Navbar
+
+ <!-- Navigation -->
+
+    <nav id="navbar" class="navbar navbar-expand-lg fixed-top" data-bs-theme="dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/images/logo-sm-white.png" alt="Boardwalk Games logo" class="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#events" class="nav-link">Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="game-library.html">Games</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="booking.html" class="btn custom-button-filled ms-lg-3">Book now</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    Carousel
+
+    <div class="col-12 col-xl-6">
+                <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="assets/images/boardwalk-games-carousel-image-1.webp" class="d-block w-100"
+                                alt="The inside of Boardwalk Games with bookshelves filled with boardgames, and wooden tables to play at">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/images/boardwalk-games-carousel-image-2.webp" class="d-block w-100"
+                                alt="The inside of Boardwalk Games with bookshelves filled with boardgames, and wooden tables to play at">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/images/boardwalk-games-carousel-image-3.webp" class="d-block w-100"
+                                alt="The inside of Boardwalk Games with bookshelves filled with boardgames, and wooden tables to play at">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/images/boardwalk-games-carousel-image-4.webp" class="d-block w-100"
+                                alt="The back-room at Boardwalk Games set up for a Dungeons and Dragons evening">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/images/boardwalk-games-carousel-image-5.webp" class="d-block w-100"
+                                alt="A cup of steaming coffee on a wooden table, some playing cards, and a notebook">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/images/boardwalk-games-carousel-image-6.webp" class="d-block w-100"
+                                alt="Students playing a card game at Boardwalk Games">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+
+            Footer
+
+            <!-- Footer / contact section -->
+    <!-- mt-auto added to push footer to the bottom of the page -->
+    <footer id="contact" class="mt-auto">
+        <div class="container section">
+            <div class="row justify-content-center">
+                <div class="col-12 text-center">
+                    <h2 class="display-6">Contact us!</h2>
+                </div>
+                <!-- Contact info -->
+                <div class="col-12 col-md-6 col-xl-4">
+                    <h3 class="sub-heading-color">Contact info</h3>
+                    <address>
+                        <strong><i class="fa-solid fa-location-dot"></i> Boardwalk Games</strong><br>
+                        123 Boardwalk<br>
+                        Boardwalk City, 12345
+                    </address>
+                    <p><i class="fa-solid fa-phone"></i> 012 345 6789<br>
+                        <i class="fa-regular fa-paper-plane"></i> info@boardwalk-games.co
+                    </p>
+                    <div class="social-links my-4">
+                        <a href="https://www.instagram.com" target="_blank"
+                            aria-label="Visit our Instagram page (opens in a new tab)" rel="noopener"><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.facebook.com" target="_blank"
+                            aria-label="Visit our Facebook page (opens in a new tab)" rel="noopener"><i
+                                class="fa-brands fa-square-facebook"></i></a>
+                        <a href="https://www.x.com" target="_blank" aria-label="Visit our X feed (opens in a new tab)"
+                            rel="noopener"><i class="fa-brands fa-x-twitter"></i></a>
+                    </div>
+                </div>
+
+                cards
+
+                  <!-- Services section -->
+        <section id="services" class="container section">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h2 class="display-6">Services</h2>
+                </div>
+                <div class="col-12 col-md-6 col-xl-3">
+                    <div class="card">
+                        <img src="assets/images/services-1.webp" class="card-img-top"
+                            alt="Boardwalk games cafe table by a window, stacks of boardgames can be seen on the table">
+                        <div class="card-body">
+                            <h3 class="card-title sub-heading-color">Play in our cafe</h3>
+                            <p class="card-text">
+                                Enjoy a relaxing atmosphere while diving into exciting board
+                                games with friends. Indulge in our cosy café offerings, from
+                                aromatic coffees to savory snacks.
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <p class="mb-0">€7 per person</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-xl-3">
+                    <div class="card">
+                        <img src="assets/images/services-2.webp" class="card-img-top"
+                            alt="Board games stacked in bookshelves, a man can be seen browsing the shelves">
+                        <div class="card-body">
+                            <!-- bootstrap cards come as h5 by default, changed to h3 to fit project heading hierarchy -->
+                            <h3 class="card-title sub-heading-color">Game library</h3>
+                            <p class="card-text">
+                                Explore our collection of board games, ranging from classic
+                                favorites to the latest releases. Find the perfect game for
+                                any age, skill level, or interest.
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <p class="mb-0">See prices in store</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-xl-3">
+                    <div class="card">
+                        <img src="assets/images/services-3.webp" class="card-img-top"
+                            alt="A chess tournament being held at Boardwalk Games">
+                        <div class="card-body">
+                            <h3 class="card-title sub-heading-color">Events</h3>
+                            <p class="card-text">
+                                Join us for special game nights, tournaments, and themed
+                                events. A great opportunity to meet new people and test your
+                                gaming skills.
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <p class="mb-0">From €5 per person</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-xl-3">
+                    <div class="card">
+                        <img src="assets/images/services-4.webp" class="card-img-top"
+                            alt="A kids party being held at Boardwalk Games">
+                        <div class="card-body">
+                            <h3 class="card-title sub-heading-color">Kids parties</h3>
+                            <p class="card-text">
+                                Celebrate your child's special day with us! We offer fun,
+                                game-filled party packages that are sure to delight young
+                                gamers and their friends.
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <p class="mb-0">From €7 per child</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        Hero image
+
+            <section id="hero">
+            <div id="cover-text">
+                <h2>Love Running</h2>
+                <h3>Dublin Docklands & Phoenix Park</h3>
+            </div>
+        </section>
 
 **Disclaimer**: This website is for educational purposes. The mental health tips and information are adapted from NHS guidance and other reputable sources but should not replace professional medical advice. If you're experiencing a mental health crisis, please contact emergency services or a crisis helpline immediately.
