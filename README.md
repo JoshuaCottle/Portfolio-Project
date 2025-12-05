@@ -70,16 +70,16 @@ User story: As a User seeking quick guidance, I want concise information cards t
 -   Accessible markup (aria attributes on carousel and navigation) and visible captions on small screens.
 
 **wireframes**
-![dropdown tablet](assets\images\dropdown tablet 1.png)
-![home page](assets\images\home page desktop.png)
-![home page tablet ](assets\images\home page tablet 1.png)
-![home page tablet 2](assets\images\home page tablet 2.png)
-![phone home dropdown](assets\images\phone home dropdown.png)
-![phone home footer](assets\images\phone home footer.png)
-![phone home full footer](assets\images\phone home full footer.png)
-![tips and afirmations page ](assets\images\tips and afirmations page.png)
-![Phone Image](assets\images\tips page tablet 1.png)
-![Phone Image](assets\images\tips page tablet 2.png)
+![dropdown tablet](assets/images/dropdown%20tablet%201.png)
+![home page](assets/images/home%20page%20desktop.png)
+![home page tablet](assets/images/home%20page%20tablet%201.png)
+![home page tablet 2](assets/images/home%20page%20tablet%202.png)
+![phone home dropdown](assets/images/phone%20home%20dropdown.png)
+![phone home footer](assets/images/phone%20home%20footer.png)
+![phone home full footer](assets/images/phone%20home%20full%20footer.png)
+![tips and affirmations page](assets/images/tips%20and%20afirmations%20page.png)
+![tips page tablet](assets/images/tips%20page%20tablet%201.png)
+![tips page tablet 2](assets/images/tips%20page%20tablet%202.png)
 
 **Website features**
 
