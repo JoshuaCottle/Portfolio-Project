@@ -84,10 +84,16 @@ User story: As a User seeking quick guidance, I want concise information cards t
 **Website features**
 
 -   Responsive navbar with brand/logo
+    ![navbar](assets/images/navbar.png)
 -   Hero image + overlaid cover text
+    ![hero image](assets/images/home%20hero%20image.png)
 -   Resources/tips card grid
+    ![resources](assets/images/resources.png)
+    ![tips](assets/images/tipscards.png)
 -   Affirmations carousel with captions
+    ![affirmations](assets/images/afirmations.png)
 -   Footer with contact info and social links
+    ![footer](assets/images/footer%20example.png)
 -   `scripts/check-rel.js` to scan and optionally fix external anchors missing `rel="noopener noreferrer"`
 
 **Tablet / Mobile view**
